@@ -1,0 +1,21 @@
+// Setup
+@import "setup/variables";
+@import "setup/fonts";
+@import "setup/mixins";
+
+// Basics
+@import "basics/basic";
+@import "basics/btns";
+
+// Components
+@import "cmps/app-header";
+@import "cmps/main-page";
+@import "cmps/second-page";
+@import "cmps/third-page";
+@import "cmps/about-me";
+@import "cmps/anls-about";
+@import "cmps/sale";
+@import "cmps/prices-page";
+@import "cmps/reviews";
+@import "cmps/contacts-page";
+@import "cmps/wave";

@@ -1,0 +1,63 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: $clr1;
+    background-color: #1e1c1cec;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    top: 0;
+    z-index: 10;
+
+
+    .logo {
+        font-size: 24px;
+        font-family: Pacifico, Arial;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            color: $clr4;
+            text-shadow: 0px 0px 6px #ffffff4d; 
+        }
+        
+    }
+    
+    a{
+        text-decoration: none;
+        color: $clr1;
+    }
+
+    .nav-bar {
+
+        display: flex;
+        padding: 0 40px;
+        gap: 30px;
+
+
+        .nav-btn {
+            font-family: Montserrat, Arial;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+            
+            &:hover {
+                color: $clr4;
+                text-shadow: 0px 0px 2px #ffffff4d; 
+            }
+        }
+    }
+}
+
+
+@include for-mobile-layout {
+    .app-header{
+       
+        
+        .nav-bar{
+            // position: fixed;
+            display: none;
+        }
+    }
+}

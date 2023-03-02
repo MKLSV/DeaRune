@@ -1,0 +1,129 @@
+.anls-about-page {
+    height: 100%;
+    background-color: $clr3;
+    padding: 70px 14vw;
+
+    h1 {
+        font-family: Jost-Light, Arial;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 400;
+        padding: 30px;
+    }
+
+    .anls-about-container {
+        display: grid;
+        justify-content: center;
+
+        // grid-template-columns: 533px 533px;
+        // grid-template-rows: 300px 300px 300px;
+
+        grid-template-areas:
+            'pic1 info1'
+            'info2 pic2'
+            'pic3 info3';
+        padding: 40px;
+
+        .pic1 {
+            grid-area: pic1;
+        }
+
+        .info1 {
+            grid-area: info1;
+        }
+
+        .pic2 {
+            grid-area: pic2;
+        }
+
+        .info2 {
+            grid-area: info2;
+        }
+
+        .pic3 {
+            grid-area: pic1;
+        }
+
+        .info3 {
+            grid-area: info3;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section {
+            background-color: $clr2;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+
+            .title {
+                color: $clr3;
+                font-family: Jost-Light, Arial;
+                font-size: 26px;
+                font-weight: 600;
+            }
+
+            .txt {
+                color: $clr6;
+                font-weight: 400;
+                font-family: Montserrat-Light, Arial;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+@include for-mobile-layout {
+    .anls-about-page {
+        padding: 30px 0px;
+
+        h1 {
+            // padding: 10px;
+        }
+
+        .anls-about-container {
+            // grid-template-columns: 100%;
+            // grid-template-rows: 1fr 1fr 1fr;
+            padding: 0;
+            // display: flex;
+            // flex-direction: column;
+            grid-template-areas:
+                'pic1'
+                'info1'
+                'pic2'
+                'info2'
+                'pic3'
+                'info3';
+
+            section {
+                height: 35vh;
+                padding: 20px 10px;
+                gap: 10px;
+
+                .title {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+
+                .txt {
+                    font-weight: 400;
+                    font-family: Montserrat, Arial;
+                    font-size: 18px;
+                }
+            }
+
+
+
+        }
+
+    }
+
+}

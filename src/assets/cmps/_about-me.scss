@@ -1,0 +1,123 @@
+.about-me-page {
+    // height: 100%;
+    background-color: $clr2;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    display: flex;
+    margin: 150px 0;
+    box-shadow: 0 0 22px 5px black;
+    // gap: 20px;
+    width: 70vw;
+
+    img {
+        height: 100%;
+        width: 40%;
+        // width: 400px;
+        object-fit: cover;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+
+    .about-me-container {
+        width: 60%;
+        padding: 20px 35px;
+    }
+
+    .about-me-txt {
+        color: $clr6;
+
+        h1 {
+            font-family: Jost-Light, Arial;
+            font-size: 40px;
+            line-height: 48px;
+            padding-bottom: 40px;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-family: Montserrat-Light, Arial;
+            font-size: 18px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            font-weight: 400;
+        }
+
+    }
+
+    .about-me-icons {
+        margin: 30px 0;
+        height: 60px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-left: 3px;
+
+
+        a {
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            // border: 2px solid rgb(212, 167, 95);
+            border: 2px solid $clr3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                box-shadow: 0 0 3px 1px white;
+            }
+        }
+    }
+
+}
+
+@include for-mobile-layout {
+    .about-me {
+        // display: inline-block;
+        margin: 50px 0;
+        box-shadow: 0 0 0 0;
+        width: 90vw;
+
+        img{
+            position: absolute;
+            margin-top: 50px;
+            opacity: 0.4;
+            height: 100%;
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        .about-me-container {
+            width: 100%;
+            padding: 0px 20px;
+            z-index: 2;
+        }
+
+
+        .about-me-txt {
+            h1 {
+                font-size: 30px;
+                line-height: 38px;
+                padding-bottom: 15px;
+            }
+
+            h3 {
+                font-family: Montserrat-Light, Arial;
+                font-size: 18px;
+                line-height: 23px;
+                padding-bottom: 30px;
+                font-weight: 400;
+            }
+
+        }
+
+    }
+
+}

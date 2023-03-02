@@ -1,0 +1,88 @@
+.second-page {
+    background-color: $clr2;
+    color: $clr6;
+
+    h1 {
+        margin-bottom: 50px;
+        font-family: Jost-Light, Arial;
+        font-weight: 500;
+        font-size: 40px;
+        // line-height: 48px;
+        // height: 100%;
+    }
+
+    .second-page-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 100px;
+
+        .container {
+            width: 55vw;
+            min-height: 74px;
+            padding: 20px 0;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            &.first {
+                border-top: 1px solid white;
+            }
+
+            &:hover {
+                .title {
+
+                    color: #a8a8a8;
+                }
+            }
+        }
+
+        .title {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+            font-size: 22px;
+            align-items: center;
+            font-weight: 500;
+            font-family: Jost, Arial;
+
+        }
+
+        .text {
+            text-align: start;
+            padding: 30px 0;
+            font-size: 18px;
+            font-family: "Open Sans", Arial;
+            font-weight: 300;
+
+
+            &.hide {
+                display: none;
+            }
+        }
+    }
+}
+
+@include for-mobile-layout {
+
+    .second-page {
+
+        .second-page-container {
+            padding: 70px 20px;
+
+            .container {
+                width: 80vw;
+            }
+        }
+
+        h1 {
+            font-size: 25px;
+            width: 85vw;
+        }
+    }
+}

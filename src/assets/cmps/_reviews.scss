@@ -1,0 +1,65 @@
+.rewies-page {
+    height: 100%;
+    background-color: $clr3;
+    padding: 70px 14vw;
+
+    .title {
+        text-align: center;
+
+        h1 {
+            font-family: Jost-Light, Arial;
+            font-size: 40px;
+            padding-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-family: Montserrat-Light, Arial;
+            font-size: 24px;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+    }
+}
+
+.rewies-container {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0;
+    // height: 100%;
+    justify-content: end;
+
+
+    .carousel {
+        width: 35vw;
+        // height: 100%;
+
+        img {
+            height: 100vh;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+@include for-mobile-layout {
+    .rewies-page {
+        padding: 50px 0px;
+
+        .rewies-container {
+            flex-direction: column;
+            gap: 0px;
+            padding: 0px 0;
+
+
+            .carousel {
+                width: 90vw;
+                // height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.consul{
+    font-family: Jost, Arial;
+    font-size: 20px;
+    padding: 18px 20px;
+    width: 260px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: $clr1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s;
+    
+    &:hover{
+        // background-color: rgb(56, 127, 56);
+        box-shadow: 0px 0px 10px 1px rgb(254, 254, 254);
+    }
+}
