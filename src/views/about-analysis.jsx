@@ -1,6 +1,3 @@
-import img1 from '../assets/imgs/anls1.jpg'
-import img2 from '../assets/imgs/anls2.jpg'
-import img3 from '../assets/imgs/anls3.jpg'
 import { Sale } from '../cmps/sale'
 
 export function AnlsAbout() {
@@ -9,7 +6,7 @@ export function AnlsAbout() {
             <h1>Как проходит разбор</h1>
 
             <div className="anls-about-container">
-                <img className='img1' src={img1} />
+                <img className='img1' src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554980/anls1_m5miwo.jpg" />
                 <section className='info1'>
                     <h2 className='title'>
                         Первый этап
@@ -25,8 +22,8 @@ export function AnlsAbout() {
                     <h3 className='txt'>
                         По вашим данным я буду собирать и разбирать информацию, как уже сказано выше в матрице зашифровано очень много информации, поэтому на сбор информации уходит давольно много времени, далее все редактируется и конвертируется в PDF файл  </h3>
                 </section>
-                <img className='img2' src={img2} />
-                <img className='img3' src={img3} />
+                <img className='img2' src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554982/anls2_gtboyx.jpg" />
+                <img className='img3' src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554982/anls3_gm4rbu.jpg" />
                 <section className='info3'>
                     <h2 className='title'>
                         Финал

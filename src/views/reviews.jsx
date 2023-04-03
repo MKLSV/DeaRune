@@ -1,9 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import review1 from '../assets/imgs/1.png'
-import review2 from '../assets/imgs/2.png'
-import review3 from '../assets/imgs/3.png'
+
 import { Sale } from "../cmps/sale";
 
 const responsive = {
@@ -23,7 +21,6 @@ const responsive = {
 
 export function Reviews() {
 
-    const reviews = [review1, review2, review3]
 
     return (
         <div className="rewies-page">
@@ -36,7 +33,10 @@ export function Reviews() {
                     responsive={responsive} infinite={true}
                     autoPlay={true}
                     autoPlaySpeed={5000}>
-                    {reviews.map(review => <img key={review} src={review} />)}
+                    {/* {reviews.map(review => <img key={review} src={review} />)} */}
+                        <img src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554993/2_oguv0u.png" alt="" />
+                        <img src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554987/1_vsgvti.png" alt="" />
+                        <img src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554983/3_vrcsko.png" alt="" />
                 </Carousel>
                 <Sale />
             </div>

@@ -1,4 +1,4 @@
-import deaImg from '../assets/imgs/dea.jpg'
+
 import { SlSocialVkontakte, SlSocialInstagram } from 'react-icons/sl'
 import { TbBrandTelegram } from "react-icons/tb"
 export function AboutMe() {
@@ -6,7 +6,7 @@ export function AboutMe() {
     return (
         <div className="about-me-page" id="me">
             <div className="about-me">
-                <img src={deaImg} />
+                <img src="https://res-console.cloudinary.com/dvb3zhsvh/thumbnails/v1/image/upload/v1680554987/ZGVhX2tveWN1aA==/as_is" />
                 <div className='about-me-container'>
                     <div className='about-me-txt'>
                         <h1>Здравствуй, путник.</h1>

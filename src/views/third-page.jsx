@@ -1,5 +1,4 @@
-import goodImg from '../assets/imgs/good.png'
-import badImg from '../assets/imgs/bad.jpg'
+
 
 export function ThirdPage() {
     return (
@@ -12,7 +11,7 @@ export function ThirdPage() {
 
                 <div className="carts-container">
                     <div className="cart">
-                        <img src={badImg} />
+                        <img src="https://res-console.cloudinary.com/dvb3zhsvh/thumbnails/v1/image/upload/v1680554989/YmFkX2VhY2lhaw==/as_is" />
                         <div className='text-container bad'>
                             <h2>Идти по минусовому направлению</h2>
                             <h3>Если идти по минусовому направлению, то жизненный сценарий смещается в негативное русло и в неприятные события</h3>
@@ -21,7 +20,7 @@ export function ThirdPage() {
                     </div>
 
                     <div className="cart second">
-                        <img src={goodImg} />
+                        <img src="https://res-console.cloudinary.com/dvb3zhsvh/thumbnails/v1/image/upload/v1680554991/Z29vZF9rdXkyZjU=/as_is" />
                         <div className='text-container good'>
                             <h2>Идти по плюсовому направлению</h2>
                             <h3>Если идти по плюсовому направлению, то сценарий смещается в позитивное русло и хорошие события</h3>
