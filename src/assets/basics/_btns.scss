@@ -5,7 +5,7 @@
     width: 260px;
     margin-bottom: 10px;
     border-radius: 25px;
-    background-color: $clr1;
+    background-color: $clr8;
     color: white;
     border: none;
     cursor: pointer;
@@ -14,5 +14,10 @@
     &:hover{
         // background-color: rgb(56, 127, 56);
         box-shadow: 0px 0px 10px 1px rgb(254, 254, 254);
+    }
+
+    &.first-btn{
+        background-color: #1b766d;
+        // background-color: $clr1;
     }
 }

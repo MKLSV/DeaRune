@@ -1,8 +1,8 @@
 import { Methods } from "../cmps/methods"
-
+import { useState } from "react"
 
 export function SecondPage() {
-
+    const [currentOpen, setCurrentOpen] = useState(null);
 
     const contant = [
         {
@@ -37,7 +37,7 @@ export function SecondPage() {
         <div className="second-page" >
             <div className="second-page-container">
                 <h1>Этот метод для тебя, если ты хочешь узнать:</h1>
-                {contant.map((item, i) => <Methods key={i} i={i} item={item} />)}
+                {contant.map((item, i) => <Methods key={i} i={i} item={item} setCurrentOpen={setCurrentOpen} currentOpen={currentOpen}/>)}
             </div>
         </div>
     )

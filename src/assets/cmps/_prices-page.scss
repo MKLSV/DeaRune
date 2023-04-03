@@ -89,7 +89,7 @@
     .place-count {
         font-family: Montserrat, Arial;
         font-size: 15px;
-        color: $clr1;
+        color: #175d56;
         font-weight: 500;
     }
 
@@ -112,7 +112,8 @@
         font-family: Jost, Arial;
         border-radius: 25px;
         transition: 0.5s;
-        background-color: $clr1;
+        background-color: #175d56;
+        // background-color: $clr8;
         display: flex;
         justify-content: center;
         align-items: center;

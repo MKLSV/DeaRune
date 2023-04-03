@@ -1,21 +1,18 @@
-import { useState } from "react"
+
+export function Methods({ item, i, setCurrentOpen, currentOpen}) {
 
 
-export function Methods({ item, i }) {
-
-    const [userSwitch, switchIsOpen] = useState(false)
-
-    function onToggle() {
-        switchIsOpen(!userSwitch)
-    }
+    const onToggle = () => {
+        currentOpen === i ? setCurrentOpen(null) : setCurrentOpen(i)
+      }
 
     return (
-        <div className={i == 0 ? "first container" : "container"} onClick={onToggle}>
+        <div className={i === 0 ? "first container" : "container"} onClick={onToggle}>
             <section className="title">
                 <span>{item.title}</span>
-                <span>{userSwitch ? "-" : "+"}</span>
+                <span>{currentOpen === i ? "-" : "+"}</span>
             </section>
-            <section className={userSwitch ? "text" : "text hide"}>
+            <section className={`block ${currentOpen === i ? 'open' : 'closed'}`}>
                 <span>{item.txt}</span>
             </section>
         </div>

@@ -15,7 +15,7 @@ export function MainPage() {
 
                 </div>
                 <a href='https://t.me/dea_rune' target="_blank">
-                    <button className='consul'>Консультация</button>
+                    <button className='consul first-btn'>Консультация</button>
                 </a>
             </div>
 

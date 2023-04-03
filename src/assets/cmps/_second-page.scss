@@ -25,7 +25,6 @@
             border-bottom: 1px solid white;
             cursor: pointer;
             display: flex;
-            align-items: center;
             flex-direction: column;
             gap: 10px;
 
@@ -59,12 +58,45 @@
             font-size: 18px;
             font-family: "Open Sans", Arial;
             font-weight: 300;
+            transition: 0.5s;
+            height: 100%;
+            transition: height 0.5s ease;
+
 
 
             &.hide {
-                display: none;
+                height: 0;
+                overflow: hidden;
             }
         }
+
+        .block {
+            height: 100px;
+            // background-color: #ccc;
+            text-align: start;
+            font-size: 18px;
+            font-family: "Open Sans", Arial;
+            font-weight: 300;
+            transition: 0.4s;
+            // transition: height 0.3s ease;
+        }
+        
+        .block.open {
+            height: 100%;
+            padding: 30px 0;
+            overflow-y: hidden;
+            span{
+                display: block;
+            }
+        }
+        
+        .block.closed {
+            overflow: hidden;
+            height: 0;
+            span{
+                display: none;
+            }
+          }
     }
 }
 
