@@ -7,9 +7,8 @@ import { RiContactsLine } from "react-icons/ri"
 export function Contacts() {
     return (
         <div className="contacts-page" id="contacts">
-            <span className='contacts-icon'>
-                <SlScreenSmartphone />
-            </span>
+ <h1>Контакты для связи и более подробной информации</h1>
+ <div class="line"></div>
             {/* <h1>Контакты</h1> */}
             <div className="contacts">
 

@@ -79,18 +79,23 @@
 }
 
 @include for-mobile-layout {
+    .about-me-page{
+
+    }
     .about-me {
+        position: relative;
         // display: inline-block;
         margin: 50px 0;
         box-shadow: 0 0 0 0;
-        width: 90vw;
+        width: 97vw;
+        justify-content: center;
 
         img{
             position: absolute;
-            margin-top: 50px;
+            // margin-top: 50px;
             opacity: 0.4;
-            height: 100%;
-            width: 90%;
+            // height: calc(100% - 65px);
+            width: 95%;
             border-radius: 10px;
         }
 
@@ -112,10 +117,16 @@
                 font-family: Montserrat-Light, Arial;
                 font-size: 18px;
                 line-height: 23px;
-                padding-bottom: 30px;
+                padding-bottom: 15px;
                 font-weight: 400;
             }
 
+        }
+        .about-me-icons{
+            margin: 0;
+            justify-content: center;
+            // align-items: flex-start;
+            // padding: 10px;
         }
 
     }

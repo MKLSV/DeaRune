@@ -9,11 +9,10 @@
         height: 200%;
         width: 100%;
         background-image: url(https://res.cloudinary.com/dvb3zhsvh/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1680554995/main_b1xznj.jpg);
-        // background-image: url(../imgs/main.jpg);
         background-size: cover;
         background-attachment: fixed;
-
     }
+    
     
     .main-content {
         padding: 150px 150px 100px;
@@ -22,7 +21,6 @@
 
     .text-container {
         width: 70vw;
-
     }
 
     h1 {
@@ -43,14 +41,20 @@
         line-height: 33px;
         font-weight: 300;
     }
+    
 }
 
 
 @include for-mobile-layout {
 
     .main-page {
+        height: 100vh;
         .main-content {
-            padding: 120px 30px 110px 40px;
+            padding: 40% 20px 30px ;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .text-container {
             width: 100%;
@@ -62,7 +66,8 @@
         }
 
         h2 {
-            padding: 40px 0;
+            width: 100%;
+            padding: 20px 0;
             font-size: 20px;
         }
     }

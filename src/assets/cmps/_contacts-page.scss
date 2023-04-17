@@ -1,6 +1,25 @@
 .contacts-page {
     background-color: $clr2;
     padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+    .line {
+        height: 2px;
+        border-radius: 31px;
+        width: 705px;
+        background-color: #fff;
+    }
+
+    h1 {
+        font-family: Jost, Arial;
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+    }
 
     .contacts-icon {
         display: none;
@@ -60,67 +79,30 @@
 }
 
 @include for-mobile-layout {
-    // .contacts-page {
-    //     padding: 0px 0px;
-    //     position: fixed;
-    //     bottom: 10px;
-    //     right: 10px;
-    //     text-align: center;
-    //     background-color: $clr1;
-    //     width: 65px;
-    //     height: 65px;
-    //     font-size: 25px;
-    //     border-radius: 40px;
-    //     border: 1px solid;
-    //     box-shadow: 0 0 15px 1px;
-    //     z-index: 15;
-
-    //     .contacts-icon{
-    //         display: flex;
-    //         height: 100%;
-    //         font-size: 35px;
-    //         justify-content: center;
-    //         align-items: center;
-    //     }
-
-    //     &:active {
-    //         .contacts {
-    //             opacity: 1;
-    //             position: absolute;
-    //         }
-    //     }
-
-    //     .contacts {
-    //         display: flex;
-    //         opacity: 0;
-    //         justify-content: center;
-    //         gap: 100px;
-
-
-    //         a {
-    //             display: flex;
-    //             gap: 10px;
-    //             justify-content: center;
-    //             align-items: center;
-    //             font-size: 20px;
-    //             color: white;
-    //             border: 2px solid;
-    //             padding: 15px;
-    //             border-radius: 30px;
-    //             text-decoration: none;
-    //             cursor: pointer;
-    //         }
-    //     }
-    // }
 
     .contacts-page {
-        padding: 50px 15%;
+        padding: 50px 15px;
+        flex-direction: row;
 
+        .line{
+            width: 2px;
+            height: 246px;
+        }
+        h1{
+            font-size: 1.5rem;
+            width: 45%;
+        }
         .contacts {
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 30px;
+            a{
+                width: 60px;
+                span{
+                    display: none;
+                }
+            }
         }
 
     }

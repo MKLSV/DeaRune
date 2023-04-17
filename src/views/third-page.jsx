@@ -1,3 +1,4 @@
+import { CartsContainer } from "../cmps/carts-container";
 
 
 export function ThirdPage() {
@@ -8,26 +9,7 @@ export function ThirdPage() {
                 <h2>Регрессивная нумерология – это матрица нашего жизненного пути, которая содержит в себе:
                     Наши характеристики, Наши таланты, Жизненные задачи, Кармические нельзя, Предназначение, Кем мы должны стать.</h2>
                 <h2>У нас есть два сценария, два пути:</h2>
-
-                <div className="carts-container">
-                    <div className="cart">
-                        <img src="https://res-console.cloudinary.com/dvb3zhsvh/thumbnails/v1/image/upload/v1680554989/YmFkX2VhY2lhaw==/as_is" />
-                        <div className='text-container bad'>
-                            <h2>Идти по минусовому направлению</h2>
-                            <h3>Если идти по минусовому направлению, то жизненный сценарий смещается в негативное русло и в неприятные события</h3>
-                            <span>Узнать больше...</span>
-                        </div>
-                    </div>
-
-                    <div className="cart second">
-                        <img src="https://res-console.cloudinary.com/dvb3zhsvh/thumbnails/v1/image/upload/v1680554991/Z29vZF9rdXkyZjU=/as_is" />
-                        <div className='text-container good'>
-                            <h2>Идти по плюсовому направлению</h2>
-                            <h3>Если идти по плюсовому направлению, то сценарий смещается в позитивное русло и хорошие события</h3>
-                            <span>Узнать больше...</span>
-                        </div>
-                    </div>
-                </div>
+                <CartsContainer/>
                 <div className='third-page-footer'>
                     <h3>
                         Нумерология позволяет узнать как плюсовое направление чтобы понять как и куда двигатся, так и минусавое направление, что бы понять чего вам катигорически нельзя делать, позволяет составлять долгосрочные прогнозы и даёт ответы на все волнующие вопросы
