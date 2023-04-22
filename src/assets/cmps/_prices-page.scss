@@ -136,6 +136,9 @@
     .price-list {
         display: flex;
         flex-direction: column;
+        .price {
+            font-size: 24px;
+        }
     }
 
 }

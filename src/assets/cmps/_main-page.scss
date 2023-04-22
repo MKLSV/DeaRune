@@ -47,11 +47,15 @@
     .main-page {
         height: 100vh;
         .main-content {
-            padding: 40% 20px 30px ;
-            height: 100%;
+            padding: 20% 20px 30px ;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            a{
+                padding: 6px;
+            }
         }
         .text-container {
             width: 100%;
