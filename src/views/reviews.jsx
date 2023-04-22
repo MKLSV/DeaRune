@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
+
 import { Sale } from "../cmps/sale";
 
 const responsive = {
@@ -34,9 +35,9 @@ export function Reviews() {
                     autoPlay={true}
                     autoPlaySpeed={5000}>
                     {/* {reviews.map(review => <img key={review} src={review} />)} */}
-                        <img src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554993/2_oguv0u.png" alt="" />
-                        <img src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554987/1_vsgvti.png" alt="" />
-                        <img src="https://res.cloudinary.com/dvb3zhsvh/image/upload/v1680554983/3_vrcsko.png" alt="" />
+                        <img src={require("../assets/imgs/1.png")} alt="Отзыв о разборе нумеролога" />
+                        <img src={require("../assets/imgs/2.png")} alt="Отзыв о разборе нумеролога" />
+                        <img src={require("../assets/imgs/3.png")} alt="Отзыв о разборе нумеролога" />
                 </Carousel>
                 <Sale />
             </div>
