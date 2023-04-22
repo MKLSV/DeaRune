@@ -85,13 +85,16 @@
     .about-me {
         position: relative;
         // display: inline-block;
-        margin: 50px 0;
-        box-shadow: 0 0 0 0;
+        margin: 50px 20px;
+        // box-shadow: 0 0 0 0;
         width: 97vw;
+        padding: 7px 0;
+        border-radius: 10px;
         justify-content: center;
 
         img{
-            position: absolute;
+            display: none;
+            // position: absolute;
             // margin-top: 50px;
             opacity: 0.4;
             // height: calc(100% - 65px);
