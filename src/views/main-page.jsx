@@ -1,10 +1,10 @@
-import bgImg from '../assets/imgs/main.jpg'
+import { MainBgc } from "../cmps/main-bgc";
 
 export function MainPage() {
 
     return (
         <div className="main-page" id="home">
-            <img className='main-img' src={bgImg}/>
+            <MainBgc />
             <div className='main-content'>
                 <div className='text-container'>
                     <h1>
